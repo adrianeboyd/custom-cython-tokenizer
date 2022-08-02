@@ -2,6 +2,7 @@ from setuptools import setup, Extension
 from distutils.command.build_ext import build_ext
 from Cython.Build import cythonize
 from Cython.Compiler import Options
+import numpy
 
 
 # Preserve `__doc__` on functions and classes
@@ -47,7 +48,7 @@ def setup_package():
             "custom_tokenizer.custom_tokenizer",
             ["custom_tokenizer/custom_tokenizer.pyx"],
             language="c++",
-            include_dirs=[],
+            include_dirs=[numpy.get_include()],
             extra_compile_args=["-std=c++11"],
         )
     ]

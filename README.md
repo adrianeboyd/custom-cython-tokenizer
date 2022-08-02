@@ -44,6 +44,6 @@ package`](https://spacy.io/api/cli#package):
 
 ```json
   "requirements":[
-    "custom-tokenizer>=0.0.1,<0.1.0"
+    "custom-tokenizer>=0.0.2,<0.1.0"
   ]
 ```

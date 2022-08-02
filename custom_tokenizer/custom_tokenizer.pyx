@@ -32,5 +32,5 @@ def custom_tokenizer_v1() -> Callable[[Language], "CustomTokenizer"]:
 
 
 cdef class CustomTokenizer(Tokenizer):
-    def __call__(self, unicode string):
+    def __call__(self, str string):
         return self._tokenize_affixes(string, True)
