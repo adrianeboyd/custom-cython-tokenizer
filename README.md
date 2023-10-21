@@ -7,14 +7,14 @@ with spaCy v3.
 ## Install
 
 ```bash
-pip install -U pip setuptools wheel
+pip install -U pip
 pip install .
 ```
 
 Or from the repo URL:
 
 ```bash
-pip install -U pip setuptools wheel
+pip install -U pip
 pip install https://github.com/adrianeboyd/custom-cython-tokenizer/archive/master.zip
 ```
 
